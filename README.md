@@ -1,4 +1,4 @@
-# Porjekt HållbarUtveckling EITA20
+# Projekt HållbarUtveckling EITA20
  
 Namn gruppmedlemmar
 Emily
@@ -33,14 +33,14 @@ b ) Formulera minst 2 krav <br>
 c ) Vilken information saknar vi? Hur kan vi samla in den?
 Vi saknar information runt de olika ämnen och bilder för att representera dessa. Vi samlar in den genom användning utav trovärdiga källor.
 
-Att göra (rollfördelning)
-info till sidan -> 1 del per person
-quiz (javascript delen)
-Övergripande design i css.
+Att göra (rollfördelning) <br>
+info till sidan -> 1 del per person <br>
+quiz (javascript delen) <br>
+Övergripande design i css. <br>
 
-Ämnen runt hållbarhet:
-Hav och marina resurser - Hampus
-Rent vatten och sanitet - Emily
-Hållbar energi - Marcus
+Ämnen runt hållbarhet: <br>
+Hav och marina resurser - Hampus <br>
+Rent vatten och sanitet - Emily <br>
+Hållbar energi - Marcus <br>
 
 Test
