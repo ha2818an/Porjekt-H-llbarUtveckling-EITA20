@@ -1,4 +1,4 @@
-# Porjekt HållbarUtveckling EITA20
+# Projekt HållbarUtveckling EITA20
  
 Namn gruppmedlemmar
 Emily
