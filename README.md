@@ -14,10 +14,32 @@ a ) definiera regler ni har i gruppen samt vilka konsekvenserna blir om de inte 
 4. Dagar då vi har föreläsningar på plats är man extra tillgänglig för frågor via discord
 5. Filer laddas upp via GitHub och mergeas efter hand. <br>
 
-b ) Påbörja tidsplan. Definiera de aktiviteter och datum ni vet. 
+b ) Påbörja tidsplan. Definiera de aktiviteter och datum ni vet. <br>
+V.44 bestämm rollbeskrivning och ansvarsfördelning samt skapa en skiss av hemsidan. 
+v.45 Skapa skal av din egna del och presentera på fredag e.m för att se att vi är på samma spår. 
+v.46 Specifisera krav, mål och vilka tester som behöver genomföras för att ko
+v.47
+v.48 Avstämning slutet av veckan för att kontrollera om något behöver ändras. Stämm av med mål och krav.
+v.49 Slutliga ändringar och 
 
+2 Påbörja kravarbetet: <br>
+a ) Fundera på vad ni vet redan nu. Skriv ner relevant information som kan leda till krav. <br>
+1. Det ska finnas ett quizz
+2. Det ska finnas information om hållbar utveckling
+3. Det ska finnas grafiska element och bilder som representerar informationen
+b ) Formulera minst 2 krav <br>
+1. 12 frågor på quizzet ( 3 var )
+2. 6 st antal html sidor ( Framsida, Quizz, 4 infomrationssidor) 
+c ) Vilken information saknar vi? Hur kan vi samla in den?
+Vi saknar information runt de olika ämnen och bilder för att representera dessa. Vi samlar in den genom användning utav trovärdiga källor.
 
 Att göra (rollfördelning)
 info till sidan -> 1 del per person
 quiz (javascript delen)
 Övergripande design i css.
+
+Ämnen runt hållbarhet:
+Hav och marina resurser - Hampus
+Rent vatten och sanitet - Emily
+Hållbar energi - Marcus
+
