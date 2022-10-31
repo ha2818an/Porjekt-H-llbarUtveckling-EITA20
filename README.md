@@ -15,12 +15,12 @@ a ) definiera regler ni har i gruppen samt vilka konsekvenserna blir om de inte 
 5. Filer laddas upp via GitHub och mergeas efter hand. <br>
 
 b ) Påbörja tidsplan. Definiera de aktiviteter och datum ni vet. <br>
-V.44 bestämm rollbeskrivning och ansvarsfördelning samt skapa en skiss av hemsidan. 
-v.45 Skapa skal av din egna del och presentera på fredag e.m för att se att vi är på samma spår. 
-v.46 Specifisera krav, mål och vilka tester som behöver genomföras för att ko
-v.47
-v.48 Avstämning slutet av veckan för att kontrollera om något behöver ändras. Stämm av med mål och krav.
-v.49 Slutliga ändringar och 
+V.44 bestämm rollbeskrivning och ansvarsfördelning samt skapa en skiss av hemsidan. <br>
+v.45 Skapa skal av din egna del och presentera på fredag e.m för att se att vi är på samma spår. <br>
+v.46 Specifisera krav, mål och vilka tester som behöver genomföras för att kontrollera funktion och användarvänlighet <br>
+v.47 <br>
+v.48 Avstämning slutet av veckan för att kontrollera om något behöver ändras. Stämm av med mål och krav. <br>
+v.49 Slutliga ändringar <br>
 
 2 Påbörja kravarbetet: <br>
 a ) Fundera på vad ni vet redan nu. Skriv ner relevant information som kan leda till krav. <br>
