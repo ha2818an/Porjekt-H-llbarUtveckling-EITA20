@@ -54,7 +54,7 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet massa vitae tortor. Nibh ipsum consequat nisl vel pretium lectus. Mauris augue neque gravida in. Pellentesque massa placerat duis ultricies lacus. Vitae tortor condimentum lacinia quis vel eros donec ac. Enim nulla aliquet porttitor lacus luctus. Nibh praesent tristique magna sit amet purus gravida quis. Quis varius quam quisque id diam vel quam elementum. Sollicitudin ac orci phasellus egestas tellus rutrum.        </div>
         <div class="article-title-section article-section"> <!-- >titel som ska vara relevant till bild och desc<!--> 
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <h2>Hav och marina resurser</h2>
         </div>
         
         <div class="article-nav-section article-section"> <!-- > navigeringsknappar vänster-höger som hämtar scriptet längst ner i dokumentet när knapparna trycks<!-->
@@ -78,7 +78,7 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet massa vitae tortor. Nibh ipsum consequat nisl vel pretium lectus. Mauris augue neque gravida in. Pellentesque massa placerat duis ultricies lacus. Vitae tortor condimentum lacinia quis vel eros donec ac. Enim nulla aliquet porttitor lacus luctus. Nibh praesent tristique magna sit amet purus gravida quis. Quis varius quam quisque id diam vel quam elementum. Sollicitudin ac orci phasellus egestas tellus rutrum.        </div>
         <div class="article-title-section article-section">
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <h2>Minska föroreningarna i havet</h2>
         </div>
         
         <div class="article-nav-section article-section">
@@ -98,12 +98,13 @@
         </div>
     </article>
     <article data-index="2" data-status="inactive">
-        <div class="article-image-section article-section"></div>
+        <div class="article-image-section article-section">
+        </div>
         <div class="article-description-section article-section">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet massa vitae tortor. Nibh ipsum consequat nisl vel pretium lectus. Mauris augue neque gravida in. Pellentesque massa placerat duis ultricies lacus. Vitae tortor condimentum lacinia quis vel eros donec ac. Enim nulla aliquet porttitor lacus luctus. Nibh praesent tristique magna sit amet purus gravida quis. Quis varius quam quisque id diam vel quam elementum. Sollicitudin ac orci phasellus egestas tellus rutrum.        </div>
         <div class="article-title-section article-section">
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <h2>Minska havsförsurningen</h2>
         </div>
         
         <div class="article-nav-section article-section">
@@ -125,9 +126,9 @@
         <div class="article-image-section article-section"></div>
         <div class="article-description-section article-section">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet massa vitae tortor. Nibh ipsum consequat nisl vel pretium lectus. Mauris augue neque gravida in. Pellentesque massa placerat duis ultricies lacus. Vitae tortor condimentum lacinia quis vel eros donec ac. Enim nulla aliquet porttitor lacus luctus. Nibh praesent tristique magna sit amet purus gravida quis. Quis varius quam quisque id diam vel quam elementum. Sollicitudin ac orci phasellus egestas tellus rutrum.        </div>
+                Senast 2020 förvalta och skydda marina och kustnära ekosystem på ett hållbart sätt för att undvika betydande negativa konsekvenser, bland annat genom att stärka deras motståndskraft, samt vidta åtgärder för att återställa dem i syfte att uppnå friska och produktiva hav.          </div>
         <div class="article-title-section article-section">
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <h2>Skydda och återställ ekosystem</h2>
         </div>
         
         <div class="article-nav-section article-section">
@@ -154,6 +155,9 @@
 
 <!-- > script js för att kunna navigera mellan sidorna som är kodade under "article" <!-->
 <script>
+let activeIndex = 0;
+const slides = document.getElementsByTagName("article");
+
 const rightSlide = () => { //skapar en variabel som är länkad till data-index för att enkelt hålla reda på active eller inactive
   const nextIndex = activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
   
@@ -162,25 +166,19 @@ const rightSlide = () => { //skapar en variabel som är länkad till data-index 
   
   currentSlide.dataset.status = "before"; //ändrar status för nuvarande artikel så den kan slidas ut i rätt riktining 
   nextSlide.dataset.status = "becoming-active-from-after";// ändrar status för uppkommande artikel för att kunna fylla webbsidan med ny content när nuvarande artikel försvinner  
+  
   setTimeout(() => { //lagrar värdet så man kan gå åt bägge hållen
     nextSlide.dataset.status = "active";
     activeIndex = nextIndex;
   });
-
-
 }
-let activeIndex = 0;
-
-const slides = document.getElementsByTagName("article");
-
 const leftSlide = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1; //samma som för right slide men invers så den går ut ur skärmen och hämtar ny från rätt riktning
   
   const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
         nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
         
-  currentSlide.dataset.status = "after"; //samma som right slide men "after" istället för "before" för att skilja på riktning och data index
-  
+  currentSlide.dataset.status = "after"; //samma som right slide men "after" istället för "before" för att skilja på riktning och data
   nextSlide.dataset.status = "becoming-active-from-before";
   
   setTimeout(() => {

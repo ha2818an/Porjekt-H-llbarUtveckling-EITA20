@@ -100,6 +100,9 @@ main > article > .article-title-section > h2 { /* design för titel elementet */
     z-index: 3;
     padding: 2rem;
 }
+main > article > .article-image-section {
+    background: url("C:\Users\hampu\Documents\GitHub\Porjekt-H-llbarUtveckling-EITA20\Webbsidor\coastal-ecosystem.jpg");
+}
 main > article[data-status="inactive"] {/* flyttar element x grader för att få det att se ut som att det åker in/ut ur webbläsaren */
     transform: translateX(-100%);
     transition: none;
@@ -128,16 +131,7 @@ main > article > .article-section > .article-nav-button { /* design element för
     outline: none;
     cursor: pointer;
 }
-main > article > .article-section > .article-nav-button > .rightButton { /* sätter border på höger pil för att skapa en border mellan pilarna*/
-    border-left: 1px solid var(--border-color)
-
-}
-main > article > .article-section > .article-nav-button:hover { /* effekt för att visa vilken knapp man håller musen över  */
-    background-color: transparent;
-    flex-grow: 1;
-    border:none;
-    outline: none;
-    cursor: pointer;
+main > article > .article-section > .article-nav-button:hover { /* effekt för att visa vilken knapp man håller musen över */
     border: 1px solid var(--border-color)
 }
 
