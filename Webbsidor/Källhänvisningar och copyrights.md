@@ -25,6 +25,18 @@ https://github.com/FortAwesome/Font-Awesome
 https://creativecommons.org/licenses/by/4.0/
 Creative Commons - Licens
 
+Copyright Logo: 
+https://icon-sets.iconify.design/emojione/copyright/
+https://github.com/EmojiTwo/emojitwo
+https://creativecommons.org/licenses/by/4.0/
+Creative Commons - Licens
+
+
+Pil Logo:
+https://icon-sets.iconify.design/bi/arrow-right/
+https://github.com/danklammer/bytesize-icons
+https://github.com/twbs/icons/blob/main/LICENSE.md
+MIT - Licens
 
 The MIT license (the "License") set forth below applies to all parts of the clarity-assets project.  You may not use this file except in compliance with the License.
 
