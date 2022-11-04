@@ -61,6 +61,7 @@ nav > .nav-section { /* centrerar innehållet i nav och lägger till vita linjer
 }
 #nav-link-section{ /* visuellt sätter ett mellan rum mellan länkarna */
     gap: 6rem;
+    font-size: 2rem;
 }
 #nav-contact-section { /* fyller ut border i hörnet då resterande har border left endast*/
     gap:3rem;
@@ -91,14 +92,17 @@ main > article > .article-section { /* fyller artikel content till kvarvarande s
     display: flex;
     border: 1px solid var(--border-color);
 }
-main > article > .article-title-section > h2 { /* design för titel elementet */
+main > article > .article-description-section{
+    font-size: 2rem;
+}
+main > article > .article-title-section > h1 { /* design för titel elementet */
     font-family: "Rubik", sans-serif;
-    line-height: 2rem;
     margin: 0px;
     display: flex;
     text-transform: uppercase;
     z-index: 3;
     padding: 2rem;
+    font-size: 7rem;
 }
 main > article > .article-image-section {
     background: url("C:\Users\hampu\Documents\GitHub\Porjekt-H-llbarUtveckling-EITA20\Webbsidor\coastal-ecosystem.jpg");
