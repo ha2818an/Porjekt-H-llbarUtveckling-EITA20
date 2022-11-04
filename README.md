@@ -35,7 +35,8 @@ Vi saknar information runt de olika ämnen och bilder för att representera dess
 
 Att göra (rollfördelning) <br>
 info till sidan -> 1 del per person <br>
-quiz (javascript delen) <br>
+quiz (javascript delen) Emily och Macrus <br>
+Startsida : Butrint och Hampus <br>
 Övergripande design i css. <br>
 
 Ämnen runt hållbarhet: <br>
