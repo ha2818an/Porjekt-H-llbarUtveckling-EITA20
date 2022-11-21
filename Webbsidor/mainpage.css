@@ -22,7 +22,7 @@ a { /*tar bort understäck på länktext */
     text-decoration: none;
 }
 a:hover { /* effect för att göra det tydligare att man håller musen över en länk */
-    color: rgb(155, 150, 145);
+    color: rgb(155, 150, 145);   
     transform: scale(1.05);
 }
 a:active { /* effect för att visa att man trycker på en länk */
@@ -36,6 +36,12 @@ nav { /* navigerings fält på toppen av sidan, sätter korrekt storlek*/
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-color);
+}
+#nav-logo-section > a:hover {
+    transform: none;
+}
+#nav-logo-section > a:active {
+    transform: translateY(5px);
 }
 nav > .nav-section { /* centrerar innehållet i nav och lägger till vita linjer för borders */
     padding: 1rem 1rem;
@@ -55,6 +61,7 @@ nav > .nav-section { /* centrerar innehållet i nav och lägger till vita linjer
 }
 #nav-logo-section { /* delar upp logo section i enhetlig delar mellan content inuti logo-section */
     justify-content: flex-start;
+    padding: 3rem;
 }
 #nav-logo-section > a > i { /* sätter storlek på logo font*/
     font-size: 2.5rem;
@@ -86,7 +93,7 @@ main > article { /* skapar grid för artikel content delat på kolumn och rad st
     position: absolute;
     left: 0px;
     top: 0px;
-    transition: transform 400ms ease; /* vid effekter "animeras" de mer seamless för att få en bättre design*/
+    transition: transform 800ms ease; /* vid effekter "animeras" de mer seamless för att få en bättre design*/
 }
 main > article > .article-section { /* fyller artikel content till kvarvarande space och sätter border runt*/
     height: 100%;
@@ -96,10 +103,7 @@ main > article > .article-section { /* fyller artikel content till kvarvarande s
 main > article > .article-description-section{
     font-size: 1rem;
 }
-main > article > .article-description-logo {
-    justify-content: flex-start;
 
-}
 main > article > .article-title-section > h1 { /* design för titel elementet */
     font-family: "Rubik", sans-serif;
     margin: 0px;
@@ -111,24 +115,24 @@ main > article > .article-title-section > h1 { /* design för titel elementet */
 }
 
 main > article[data-status="inactive"] {/* flyttar element x grader för att få det att se ut som att det åker in/ut ur webbläsaren */
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: none;
 }
 main > article[data-status="before"] {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 main > article[data-status="after"] {
-    transform: translateX(100%);
+    transform: translateX(200%);
 }
 main > article[data-status="active"] {
     transform: translateX(0%);
 }
 main > article[data-status="becoming-active-from-before"] {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: none;
 }
 main > article[data-status="becoming-active-from-after"] {
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: none;
 }
 main > article > .article-section > .article-nav-button { /* design element för pilarna som man navigerar med */
@@ -147,5 +151,6 @@ main > article > .article-image-section {
     padding: 0px;
     margin: 0px;
 }
+
 
 
