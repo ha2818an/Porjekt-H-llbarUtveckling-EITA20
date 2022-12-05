@@ -18,6 +18,10 @@ h1,h2,h3,a,p,span { /* sätter enhetlig font */
     font-weight: 500;
     color: rgba(155, 150, 145, 85%)
 }
+h3 {
+    padding-left:20px; 
+    padding-right:20px;
+}
 a { /*tar bort understäck på länktext */
     text-decoration: none;
 }
