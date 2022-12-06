@@ -7,5 +7,5 @@ Kravarbete:
 005 - Krav på struktur: minst 6 st html sidor ska finnas, en för var område, en för quiz och en för framsida. <br>
 006 - Krav på källor: källor till alla texter  och bilder.
 007- Krav på bilder och CSS: alla bilder ska passa i diven 
-008 - Krav på layout: Använda rätt header för varje text. Dvs rätt textstorlek till rubrik och texten
+008 - Krav på layout: Använda rätt header för varje text. Dvs rätt textstorlek till rubrik och text
 
