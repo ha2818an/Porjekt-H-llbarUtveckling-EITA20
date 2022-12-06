@@ -3,12 +3,9 @@
     --background-color: rgb(10, 14, 35);
     --border-color: rgba(255, 255, 255, 0.25);
     overflow: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
+   
+   
+    
 }
 
 body {
@@ -21,11 +18,14 @@ body {
     overflow: hidden;
     flex-grow: 0;
     flex-shrink: 0;
+    width: 100%
 }
 
 * {
     /* används för att inkludera padding eller margin i storleken på kolumn eller row */
     box-sizing: border-box;
+    
+    
 }
 
 h1,
