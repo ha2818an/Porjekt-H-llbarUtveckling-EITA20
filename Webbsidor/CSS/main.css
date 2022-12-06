@@ -24,7 +24,8 @@ h2,
 h3,
 a,
 p,
-span {
+span,
+form {
     /* sätter enhetlig font */
     font-family: "Rubik", sans-serif;
     font-weight: 500;
