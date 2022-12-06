@@ -8,6 +8,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    height: 95%;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
     height: 100%;
     margin: 0px;
     overflow: hidden;
-    position: flex;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -175,18 +175,18 @@ main>article>.article-title-section>h1 {
 
 main>article[data-status="inactive"] {
     /* flyttar element x grader för att få det att se ut som att det åker in/ut ur webbläsaren */
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: none;
 }
 
 main>article[data-status="before"] {
     /* flyttar element ut ur skärmen på vänster sida om datastatus = before */
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 
 main>article[data-status="after"] {
     /* flyttar element ut ur skärmen på högersida om datastatus = after */
-    transform: translateX(100%);
+    transform: translateX(200%);
 }
 
 main>article[data-status="active"] {
@@ -195,12 +195,12 @@ main>article[data-status="active"] {
 }
 
 main>article[data-status="becoming-active-from-before"] {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: none;
 }
 
 main>article[data-status="becoming-active-from-after"] {
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: none;
 }
 
