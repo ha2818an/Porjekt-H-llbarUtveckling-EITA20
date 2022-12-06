@@ -1,0 +1,176 @@
+:root {
+  /* variabler för att lagra färger som används i hela dokumentet*/
+  --background-color: rgb(10, 14, 35);
+  --border-color: rgba(255, 255, 255, 0.25);
+}
+body {
+  /* ser till att det alltid finns en backgrund som är anpassad till sidans storlek */
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+* {
+  /* används för att inkludera padding eller margin i storleken på kolumn eller row */
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+a,
+p,
+span {
+  /* sätter enhetlig font */
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: rgba(155, 150, 145, 85%);
+}
+a {
+  /*tar bort understäck på länktext */
+  text-decoration: none;
+}
+a:hover {
+  /* effect för att göra det tydligare att man håller musen över en länk */
+  color: rgb(155, 150, 145);
+  transform: scale(1.05);
+}
+a:active {
+  /* effect för att visa att man trycker på en länk */
+  transform: scale(0.95);
+}
+a:focus {
+  /* effect för att visa vilken länk man precis tryckt på */
+  transform: translateY(10%);
+  color: rgba(155, 150, 145, 50%);
+}
+nav {
+  /* navigerings fält på toppen av sidan, sätter korrekt storlek*/
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+nav > .nav-section {
+  /* centrerar innehållet i nav och lägger till vita linjer för borders */
+  padding: 1rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--border-color);
+}
+#nav-logo-section,
+#nav-link-section {
+  /* delar upp content i lika stora delar  */
+  flex-basis: calc(100% / 3);
+}
+#nav-sources-section,
+#nav-contact-section {
+  /* delar upp kvarvarande content i lika stora delar som ska fylla kvarvarande utrymme*/
+  flex-grow: 1;
+}
+#nav-logo-section {
+  /* delar upp logo section i enhetlig delar mellan content inuti logo-section */
+  justify-content: flex-start;
+}
+#nav-logo-section > a > i {
+  /* sätter storlek på logo font*/
+  font-size: 2.5rem;
+}
+#nav-link-section {
+  /* visuellt sätter ett mellan rum mellan länkarna */
+  gap: 6rem;
+  font-size: 2rem;
+}
+#nav-contact-section {
+  /* fyller ut border i hörnet då resterande har border left endast*/
+  gap: 3rem;
+  border-right: 1px solid var(--border-color);
+  font-size: 2rem;
+}
+svg {
+  /* sätter enheltig design för svg sektioner (logor) */
+  size: 3rem;
+  fill: rgba(155, 150, 145, 85%);
+}
+main {
+  /* fyller resterande content på sidan (alltså exklusive nav-bar) med flex grow*/
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+main > article {
+  /* skapar grid för artikel content delat på kolumn och rad storlek baserat på content size*/
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: transform 400ms ease; /* vid effekter "animeras" de mer seamless för att få en bättre design*/
+}
+main > article > .article-section {
+  /* fyller artikel content till kvarvarande space och sätter border runt*/
+  height: 100%;
+  display: flex;
+  border: 1px solid var(--border-color);
+}
+main > article > .article-description-section {
+  font-size: 1rem;
+}
+main > article > .article-title-section > h1 {
+  /* design för titel elementet */
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+  display: flex;
+  text-transform: uppercase;
+  z-index: 3;
+  padding: 2rem;
+  font-size: 4rem;
+}
+main > article > .article-image-section {
+  background: url("C:\Users\hampu\Documents\GitHub\Porjekt-H-llbarUtveckling-EITA20\Webbsidor\coastal-ecosystem.jpg");
+}
+main > article[data-status="inactive"] {
+  /* flyttar element x grader för att få det att se ut som att det åker in/ut ur webbläsaren */
+  transform: translateX(-100%);
+  transition: none;
+}
+main > article[data-status="before"] {
+  transform: translateX(-100%);
+}
+main > article[data-status="after"] {
+  transform: translateX(100%);
+}
+main > article[data-status="active"] {
+  transform: translateX(0%);
+}
+main > article[data-status="becoming-active-from-before"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+main > article[data-status="becoming-active-from-after"] {
+  transform: translateX(100%);
+  transition: none;
+}
+main > article > .article-section > .article-nav-button {
+  /* design element för pilarna som man navigerar med */
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+main > article > .article-section > .article-nav-button:hover {
+  /* effekt för att visa vilken knapp man håller musen över */
+  border: 1px solid var(--border-color);
+}
+main > article > .article-image-section {
+  max-width: 50%;
+  max-height: 100%;
+  margin: auto;
+  border: 0px;
+}
