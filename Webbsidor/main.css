@@ -208,3 +208,11 @@ main>article>.article-section>.article-nav-button:hover {
     /* effekt för att visa vilken knapp man håller musen över */
     border: 1px solid var(--border-color)
 }
+main > article > .article-image-section {
+    padding: 0px;
+    margin: 0px;
+    max-width:50%;
+    max-height:100%;
+    margin:auto; 
+    border:0px
+}
