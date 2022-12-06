@@ -52,3 +52,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 https://unsplash.com/license
 
 Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from Unsplash to replicate a similar or competing service.
+
+Butrints använda källor 
+https://scb.se/hitta-statistik/temaomraden/agenda-2030/mal-15/
+https://unric.org/sv/lat-inte-var-framtid-torka-ut/
+https://cdn.naturskyddsforeningen.se/uploads/2021/05/11103143/mal_15_uppdaterad.pdf
