@@ -8,4 +8,4 @@ Kravarbete:
 006 - Krav på källor: källor till alla texter  och bilder.
 007- Krav på bilder och CSS: alla bilder ska passa i diven 
 008 - Krav på layout: Använda rätt header för varje text. Dvs rätt textstorlek till rubrik och text
-
+009 - krav på bilder: ljus bilder ska inventeras så att bakgrundsbilden blir mörk
