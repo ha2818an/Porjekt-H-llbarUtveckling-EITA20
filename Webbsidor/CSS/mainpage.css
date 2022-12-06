@@ -3,7 +3,7 @@
     --background-color: rgb(10, 14, 35);
     --border-color: rgba(255, 255, 255, 0.25);
     overflow: hidden;
-    position:fixed;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -15,10 +15,12 @@ body {
     background: var(--background-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     overflow: hidden;
     position: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 * {
